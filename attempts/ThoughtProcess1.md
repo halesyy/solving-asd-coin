@@ -102,13 +102,13 @@ Full string:
 (Interpretation done using `prob_2_safesplit.py` to parse out unique parts)
 
 Encoding A:
-DRFHRMVKGNVRXFFHRVXGR.URWOIRDWCWG = 33 length.
+DRFHRMVKGNVRXFFHRVXGR.URWOIRDWCWG = 33 length. (bold)
 
 Encoding C/B:
-VZIVFWZXXMXWLCFMZGM7G5KS = 24 length.
+VZIVFWZXXMXWLCFMZGM7G5KS = 24 length. (normal)
 
 Encoding B:
-.ZLLZMGOMVLMXRBRSV = 18 length.
+.ZLLZMGOMVLMXRBRSV = 18 length. (shaded)
 
 Total length of all letters is 33+18+24 = 75.
 
@@ -225,3 +225,24 @@ Message:
 For 75 years the Australian Signals Directorate has brought together people with the skills, adaptability and imagination to operate in the slim area between the difficult and the impossible.
 
 See `prob_4_xor_hex.py` for how it was calculated.
+
+--
+
+Bonus level...
+
+I believe it has something to do with the differing encodings (bold, semi-shading, normal) with some of the text.
+
+## To recap, the outer ring raw text is:
+.DVZIVZFWZXRLFHRMXLMXVKGZMWNVGRXFOLFHRMVCVXFGRLM.URMWXOZIRGBRM7DRWGSC5WVKGS
+
+## Broken down into:
+DRFHRMVKGNVRXFFHRVXGR.URWOIRDWCWG = 33 length. (bold)
+VZIVFWZXXMXWLCFMZGM7G5KS = 24 length. (normal)
+.ZLLZMGOMVLMXRBRSV = 18 length. (shaded)
+
+## With the inner ring being:
+BGOAMVOEIATSIRLNGTTNEOGRERGXNTEAIFCECAIEOALEKFNR5LWEFCHDEEAEEE7NMDRXX5
+
+## Broken down into:
+BOEAIRLTOGXNTFECAOEKRWEEAEMDX = 29 length.
+GOAMVITSNGTNEGREREAICIEALFN5LFCHDEEE7NRX5 = 41 length.
