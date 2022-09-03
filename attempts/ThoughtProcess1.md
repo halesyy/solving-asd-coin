@@ -125,8 +125,29 @@ FIND CLARITY IN 7 WIDTH X 5 DEPTH
 
 Ok, Problem 3.
 
+From Problem 2, we have a 7x5 matrix. This equals 35, but the full string is 70 in length which would be 7x10. I'll attempt to break it down into two 7x5 chunks.
+
 Full string:
 BGOAMVOEIATSIRLNGTTNEOGRERGXNTEAIFCECAIEOALEKFNR5LWEFCHDEEAEEE7NMDRXX5
+
+Breaking it down into x5 matrixes:
+BGOAM
+VOEIA
+TSIRL
+NGTTN
+EOGRE
+RGXNT
+EAIFC
+
+ECAIE
+OALEK
+FNR5L
+WEFCH
+DEEAE
+EE7NM
+DRXX5
+
+~~
 
 Encoding A:
 BOEAIRLTOGXNTFECAOEKRWEEAEMDX = 29 length.
