@@ -86,8 +86,12 @@ Braile: C B F A E D
 Recons: A T B A S H
 
 Great, we now have ATBASH which is something I am to Google immediately. https://en.wikipedia.org/wiki/Atbash
+SOLVED.
 
 --
+
+"ELIZABETH II - AUSTRALIA - 2022 - 50 CENTS"
+"1947-2022 - 75 - REVEAL AND PROTECT - AUSTRALIAN SIGNALS DIRECTORATE"
 
 Ok, problem 2.
 What I believe is to be done here, is to take in the raw string which I believe is 3-bit encoded. The raw text is:
@@ -100,16 +104,22 @@ Full string:
 Encoding A:
 DRFHRMVKGNVRXFFHRVXGR.URWOIRDWCWG = 33 length.
 
+Encoding C/B:
+VZIVFWZXXMXWLCFMZGM7G5KS = 24 length.
+
 Encoding B:
 .ZLLZMGOMVLMXRBRSV = 18 length.
-
-
-Encoding C:
-VZIVFWZXXMXWLCFMZGM7G5KS = 24 length.
 
 Total length of all letters is 33+18+24 = 75.
 
 Atbash is literally just a reversal of the alphabet to directly inverse the values.
+
+Through ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+".WEAREAUDACIOUSINCONCEPTANDMETICULOUSINEXECUTION.FINDCLARITYIN7WIDTHX5DEPTH"
+
+WE ARE AUDACIOUS IN CONCEPT AND METICULOUS IN EXECUTION
+FIND CLARITY IN 7 WIDTH X 5 DEPTH
 
 --
 
