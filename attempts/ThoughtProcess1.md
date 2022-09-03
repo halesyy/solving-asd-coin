@@ -230,13 +230,16 @@ See `prob_4_xor_hex.py` for how it was calculated.
 
 -----------
 
+There are two problems, of the three there could be:
+- Outer ring shadings.
+- Inner ring shadings.
+- Shapes on bottom.
 # Ok, bonus level...
 
 I believe it has something to do with the differing encodings (bold, semi-shading, normal) with some of the text.
 
-## To recap, the outer ring raw text is:
+## OUTER RING:
 .DVZIVZFWZXRLFHRMXLMXVKGZMWNVGRXFOLFHRMVCVXFGRLM.URMWXOZIRGBRM7DRWGSC5WVKGS
-
 
 ## Broken down into:
 .ZLLZMGOMVLMXRBRSV = 18 length. (shaded)
@@ -248,12 +251,26 @@ VZIVFWZXXMXWLCFMZGM7G5KS = 24 length. (normal)
 
 ---
 
-## With the inner ring being:
+## INNER RING:
 BGOAMVOEIATSIRLNGTTNEOGRERGXNTEAIFCECAIEOALEKFNR5LWEFCHDEEAEEE7NMDRXX5
 
 ## Broken down into:
 B OE A IRL T O GXNT F ECA O EK R WE EA E MD X = 29 length. (normal)
 GOAMV I TS NGT NE GRER EAI C IE AL FN 5L FCHDE EE 7N RX 5 = 41 length. (bold)
+
+BOEAIRLTOGXNTFECAOEKRWEEAEMDX = 29 length. (normal)
+GOAMVITSNGTNEGREREAICIEALFN5LFCHDEEE7NRX5 = 41 length. (bold)
+
+# Normals together.
+VZIVFWZXXMXWLCFMZGM7G5KS
+BOEAIRLTOGXNTFECAOEKRWEEAEMDX
+
+# Bolds together.
+DRFHRMVKGNVRXFFHRVXGR.URWOIRDWCWG
+GOAMVITSNGTNEGREREAICIEALFN5LFCHDEEE7NRX5
+
+# Extra shaded.
+.ZLLZMGOMVLMXRBRSV
 
 ## With their output being:
 "Belonging to a great team striving for excellence
@@ -289,3 +306,10 @@ Which is a total of 12 "things", which is binary for (both ways):
 010100101110 = 1326
 
 Sub = 1443.
+
+--------
+
+I think that the hex being added  
+
+.DVZIVZFWZXRLFHRMXLMXVKGZMWNVGRXFOLFHRMVCVXFGRLM.URMWXOZIRGBRM7DRWGSC5 WVKGS
+BGOAMVOEIATSIRLNGTTNEOGRERGXNTEAIFCECAIEOALEKFNR5LWEFCHDEEAEEE7NMDRXX5 A5D75
