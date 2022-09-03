@@ -219,3 +219,9 @@ D1F73B331185A33
 1108B
 
 Hexadecimal.
+
+Message:
+
+For 75 years the Australian Signals Directorate has brought together people with the skills, adaptability and imagination to operate in the slim area between the difficult and the impossible.
+
+See `prob_4_xor_hex.py` for how it was calculated.

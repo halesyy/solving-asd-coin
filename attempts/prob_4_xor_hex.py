@@ -30,7 +30,7 @@ D1F73B331185A33
 
 chunks = lambda li, size=2: [li[i:i+2] for i in range(0, len(li), size)]
 
-xor_part = "xa5d75"
+xor_part = "A5D75"
 
 # Manipulate into proper format.
 assumed_hex = assumed_hex.strip()
@@ -38,4 +38,37 @@ assumed_hex = "".join(assumed_hex.split("\n"))
 hex_pairs = chunks(assumed_hex, 2)
 
 print(f"> Hex is '{len(assumed_hex)}' long")
-print(f"> Pairs:", hex_pairsc)
+# print(f"> Pairs:", hex_pairs)
+
+# A quick google showed that XOR bitwise is ^ in Python.
+# So, I tried using hexadecimal raw types in Python
+# by opening up a REPL and doing:
+# int(0xE) ^ int(0xA) which resulted in 4, which is
+# not large enough to be a ascii-readable integer, but
+# when using pairs, we get 70 and 111 respectively, which
+# map to "Fo" in ascii each characters.
+# But, using pairs will eventually fail since we don't have
+# a pair for 5 onwards, so either duplicate it to map, or
+# iteratively use modula. Anyway, let's give it a go.
+
+iter_xor_keys = [
+    "A5",
+    "D7",
+    "5A",
+    "5D",
+    "75"
+]
+pointer = 0
+results = ""
+for pair in hex_pairs:
+    value = int(pair, 16) # base-16
+    # Key retrieval, and casting.
+    select_xor_key = iter_xor_keys[pointer % 5] # using 5-based pointer
+    select_xor_val = int(select_xor_key, 16)
+    # Bitwise compile using xor + hex.
+    bitwise_result = value ^ select_xor_val
+    result_character = chr(bitwise_result)
+    results += result_character
+    pointer += 1
+
+print(results)
