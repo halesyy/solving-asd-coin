@@ -20,8 +20,9 @@ Outer ring, 3-bit encoding.
 
 Inner ring, 2-bit encoding.
 
---
-Problem 1:
+-----------
+
+# Problem 1:
 
 Side A (SA) has dots under each letter, in a matrix which seems to max out at 2x2. The matrix for the given letters is defined as:
 
@@ -88,12 +89,13 @@ Recons: A T B A S H
 Great, we now have ATBASH which is something I am to Google immediately. https://en.wikipedia.org/wiki/Atbash
 SOLVED.
 
---
+-----------
+
 
 "ELIZABETH II - AUSTRALIA - 2022 - 50 CENTS"
 "1947-2022 - 75 - REVEAL AND PROTECT - AUSTRALIAN SIGNALS DIRECTORATE"
 
-Ok, problem 2.
+# Ok, problem 2.
 What I believe is to be done here, is to take in the raw string which I believe is 3-bit encoded. The raw text is:
 
 Full string:
@@ -121,9 +123,9 @@ Through ABCDEFGHIJKLMNOPQRSTUVWXYZ
 WE ARE AUDACIOUS IN CONCEPT AND METICULOUS IN EXECUTION
 FIND CLARITY IN 7 WIDTH X 5 DEPTH
 
---
+-----------
 
-Ok, Problem 3.
+# Ok, Problem 3.
 
 "1947-2022 - 75 - REVEAL AND PROTECT - AUSTRALIAN SIGNALS DIRECTORATE"
 
@@ -181,9 +183,9 @@ GOAMVITSNGTNEGREREAICIEALFN5LFCHDEEE7NRX5 = 41 length.
 
 Total length of all letters is 29+41 = 70.
 
---
+-----------
 
-Problem 4:
+# Problem 4:
 
 Belonging to a great team striving for excellence
 we make a difference xor hex a5d75
@@ -226,23 +228,64 @@ For 75 years the Australian Signals Directorate has brought together people with
 
 See `prob_4_xor_hex.py` for how it was calculated.
 
---
+-----------
 
-Bonus level...
+# Ok, bonus level...
 
 I believe it has something to do with the differing encodings (bold, semi-shading, normal) with some of the text.
 
 ## To recap, the outer ring raw text is:
 .DVZIVZFWZXRLFHRMXLMXVKGZMWNVGRXFOLFHRMVCVXFGRLM.URMWXOZIRGBRM7DRWGSC5WVKGS
 
+
 ## Broken down into:
+.ZLLZMGOMVLMXRBRSV = 18 length. (shaded)
 DRFHRMVKGNVRXFFHRVXGR.URWOIRDWCWG = 33 length. (bold)
 VZIVFWZXXMXWLCFMZGM7G5KS = 24 length. (normal)
-.ZLLZMGOMVLMXRBRSV = 18 length. (shaded)
+
+## With their output being:
+".WEAREAUDACIOUSINCONCEPTANDMETICULOUSINEXECUTION.FINDCLARITYIN7WIDTHX5DEPTH"
+
+---
 
 ## With the inner ring being:
 BGOAMVOEIATSIRLNGTTNEOGRERGXNTEAIFCECAIEOALEKFNR5LWEFCHDEEAEEE7NMDRXX5
 
 ## Broken down into:
-BOEAIRLTOGXNTFECAOEKRWEEAEMDX = 29 length.
-GOAMVITSNGTNEGREREAICIEALFN5LFCHDEEE7NRX5 = 41 length.
+B OE A IRL T O GXNT F ECA O EK R WE EA E MD X = 29 length. (normal)
+GOAMV I TS NGT NE GRER EAI C IE AL FN 5L FCHDE EE 7N RX 5 = 41 length. (bold)
+
+## With their output being:
+"Belonging to a great team striving for excellence
+we make a difference xor hex a5d75"
+
+As well, as have some odd shapes under Side A:
+
+CIRCLE
+SQUARE
+GRID: CIRCLE, SQUARE, CIRCLE, CIRCLE
+SQUARE
+CIRCLE
+GRID: SQUARE, SQUARE, SQUARE, CIRCLE
+
+With 6 total "groups" or "items", but if broken down:
+
+CIRCLE
+SQUARE
+CIRCLE
+SQUARE
+CIRCLE
+CIRCLE
+SQUARE
+CIRCLE
+SQUARE
+SQUARE
+SQUARE
+CIRCLE
+
+Which is a total of 12 "things", which is binary for (both ways):
+
+101011010001 = 2769
+010100101110 = 1326
+
+Sub = 1443.
