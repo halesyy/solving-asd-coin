@@ -125,10 +125,35 @@ FIND CLARITY IN 7 WIDTH X 5 DEPTH
 
 Ok, Problem 3.
 
+"1947-2022 - 75 - REVEAL AND PROTECT - AUSTRALIAN SIGNALS DIRECTORATE"
+
 From Problem 2, we have a 7x5 matrix. This equals 35, but the full string is 70 in length which would be 7x10. I'll attempt to break it down into two 7x5 chunks.
+
+7 5 = 75 years.
 
 Full string:
 BGOAMVOEIATSIRLNGTTNEOGRERGXNTEAIFCECAIEOALEKFNR5LWEFCHDEEAEEE7NMDRXX5
+
+BGOAMVOEIATSIRLNGTTNEOGRERGXNTEAIFC
+ECAIEOALEKFNR5LWEFCHDEEAEEE7NMDRXX5
+
+Breaking it down into x7 matrixes:
+BGOAMVO
+EIATSIR
+LNGTTNE
+OGRERGX
+NTEAIFC
+
+Transcribed into:
+
+Belonging To A great team striving For excellence
+we make a difference xa5d75
+
+ECAIEOA
+LEKFNR5
+LWEFCHD
+EEAEEE7
+NMDRXX5
 
 Breaking it down into x5 matrixes:
 BGOAM
@@ -146,8 +171,6 @@ WEFCH
 DEEAE
 EE7NM
 DRXX5
-
-~~
 
 Encoding A:
 BOEAIRLTOGXNTFECAOEKRWEEAEMDX = 29 length.
