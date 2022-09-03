@@ -146,8 +146,9 @@ NTEAIFC
 
 Transcribed into:
 
-Belonging To A great team striving For excellence
-we make a difference xa5d75
+Belonging to a great team striving for excellence
+we make a difference xor hex a5d75
+xa5d75
 
 ECAIEOA
 LEKFNR5
@@ -182,7 +183,16 @@ Total length of all letters is 29+41 = 70.
 
 --
 
-Looks like a cryptographic hash?
+Problem 4:
+
+Belonging to a great team striving for excellence
+we make a difference xor hex a5d75
+
+"1947-2022 - 75 - REVEAL AND PROTECT - AUSTRALIAN SIGNALS DIRECTORATE"
+
+I googled "xa5d75" and this link was the first to come up... https://www.yh168.xyz/ ... and I don't think this is the solution.
+
+I presume I need to xor/hex something, but I'm not completely over how these logic gates work. Hexadecimal means I am to pair these into two's, so I'll do that over in `prob_4_hex.py`. From there, it's the bonus challenge!
 
 E3B
 8287D4
